@@ -1,0 +1,355 @@
+/* RESET E FONTES - Limpa formatações padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden; /* Evita barra horizontal */
+}
+
+/* CORES DO SEU PROJETO - Paleta bonita com suas cores favoritas */
+:root {
+    --azul: #4A90E2;
+    --roxo: #7B68EE;
+    --magenta: #E91E63;
+    --rosa: #F8BBD9;
+    --verde: #4CAF50;
+    --amarelo: #FFEB3B;
+    --branco: #FFFFFF;
+    --cinza-escuro: #2C3E50;
+    --cinza-claro: #ECF0F1;
+}
+
+/* NAVBAR FIXA NO TOPO */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--roxo);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--cinza-escuro);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--azul);
+}
+
+/* HAMBURGUER PARA MOBILE */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: var(--cinza-escuro);
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* SEÇÃO HERO (Capa) */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, var(--azul) 0%, var(--roxo) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.destaque {
+    color: var(--amarelo);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.cta-button {
+    background: var(--verde);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(76, 175, 80, 0.4);
+}
+
+/* SEÇÕES PADRÃO */
+.section {
+    padding: 5rem 0;
+}
+
+.dark-bg {
+    background: var(--cinza-claro);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--cinza-escuro);
+}
+
+/* CARDS GRID */
+.cards-grid, .solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.card, .solution-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.card:hover, .solution-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+
+.solution-impact {
+    background: var(--verde);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+/* LISTAS */
+.feature-list, .benefits-list {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+.feature-list li, .benefits-list li {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: rgba(255,255,255,0.8);
+    border-radius: 15px;
+    border-left: 5px solid var(--azul);
+}
+
+/* TIMELINE */
+.timeline {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.timeline-item {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.timeline-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* CALL TO ACTION INTERATIVO */
+.call-to-action {
+    background: linear-gradient(135deg, var(--verde), var(--azul));
+    color: white;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.action-btn {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.action-btn.green { background: var(--verde); }
+.action-btn.blue { background: var(--azul); }
+.action-btn.purple { background: var(--roxo); }
+
+.action-btn:hover {
+    transform: scale(1.05);
+}
+
+.impact-popup {
+    margin-top: 2rem;
+    padding: 2rem;
+    background: rgba(255,255,255,0.95);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: none;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+}
+
+/* SEÇÃO FINAL */
+.final-section {
+    background: linear-gradient(135deg, var(--roxo), var(--magenta));
+    color: white;
+    text-align: center;
+}
+
+.final-message {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.final-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: var(--amarelo);
+    color: var(--cinza-escuro);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+/* FOOTER */
+footer {
+    background: var(--cinza-escuro);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* RESPONSIVO - Funciona em TODOS os dispositivos! */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0,0,0,0.05);
+        padding: 2rem 0;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .timeline {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .section {
+        padding: 3rem 0;
+    }
+}

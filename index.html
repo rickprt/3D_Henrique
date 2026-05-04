@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Aqui importamos as fontes do Google Fonts para deixar bonito -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em Busca de um Mundo Melhor e Sustentável</title>
+    <!-- Liga o CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- MENU FIXO NO TOPO - Sempre visível -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo/Título do site -->
+            <div class="nav-logo">
+                🌍 <span>Em Busca de um Mundo Melhor</span>
+                
+            </div>
+            <!-- Botões do menu -->
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Início</a></li>
+                <li><a href="#problemas" class="nav-link">Problemas</a></li>
+                <li><a href="#solucoes" class="nav-link">Soluções</a></li>
+                <li><a href="#acoes" class="nav-link">Ações</a></li>
+                <li><a href="#conclusao" class="nav-link">Conclusão</a></li>
+            </ul>
+            <!-- Botão hambúrguer para mobile -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SEÇÃO 1: CAPA/TÍTULO -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Em Busca de<br><span class="destaque">um Mundo Melhor</span><br>e Sustentável</h1>
+            <p>Transformando nosso planeta através de ações conscientes</p>
+            <button class="cta-button" onclick="scrollToSection('problemas')">Descubra Mais</button>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 2: O QUE SÃO PROBLEMAS AMBIENTAIS -->
+    <section id="problemas" class="section">
+        <div class="container">
+            <h2>🌡️ Problemas Ambientais Atuais</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>🔥 Mudanças Climáticas</h3>
+                    <p>Aquecimento global causado por gases de efeito estufa</p>
+                </div>
+                <div class="card">
+                    <h3>🗑️ Poluição</h3>
+                    <p>Plásticos nos oceanos e ar poluído nas cidades</p>
+                </div>
+                <div class="card">
+                    <h3>🌳 Desmatamento</h3>
+                    <p>Perda de florestas e biodiversidade</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 3: CAUSAS -->
+    <section class="section dark-bg">
+        <div class="container">
+            <h2>💡 Principais Causas</h2>
+            <ul class="feature-list">
+                <li>Queima de combustíveis fósseis</li>
+                <li>Consumo excessivo de recursos</li>
+                <li>Desperdício de alimentos e água</li>
+                <li>Produção industrial descontrolada</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 4: CONSEQUÊNCIAS -->
+    <section id="solucoes" class="section">
+        <div class="container">
+            <h2>⚠️ Consequências Graves</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">🌊</div>
+                    <h3>Elevação do Nível do Mar</h3>
+                    <p>Cidades costeiras em risco de desaparecimento</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">🌪️</div>
+                    <h3>Fenômenos Extremos</h3>
+                    <p>Furacões, secas e enchentes mais intensas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 5-9: SOLUÇÕES E PREVENÇÃO -->
+    <section class="section dark-bg">
+        <div class="container">
+            <h2>🛡️ Métodos de Prevenção</h2>
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <h3>♻️ Reciclagem</h3>
+                    <p>Separe lixo orgânico, papel, plástico e metal</p>
+                    <div class="solution-impact">Reduz 70% do lixo em aterros</div>
+                </div>
+                <div class="solution-card">
+                    <h3>🌱 Energia Renovável</h3>
+                    <p>Solar, eólica e hidrelétrica limpa</p>
+                    <div class="solution-impact">0 emissões de CO2</div>
+                </div>
+                <div class="solution-card">
+                    <h3>🚲 Mobilidade Verde</h3>
+                    <p>Bicicleta, transporte público, carona</p>
+                    <div class="solution-impact">Economia de 2 toneladas CO2/ano</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 10: EXEMPLOS PRÁTICOS -->
+    <section class="section">
+        <div class="container">
+            <h2>✨ Exemplos Práticos</h2>
+            <div class="examples">
+                <div class="example">
+                    <h3>🏭 Indústria Zero Resíduos</h3>
+                    <p>Empresas que reutilizam 100% dos materiais</p>
+                </div>
+                <div class="example">
+                    <h3>🌍 Cidades Verdes</h3>
+                    <p>Singapura: 47% de área verde urbana</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 11: O QUE VOCÊ PODE FAZER -->
+    <section id="acoes" class="section call-to-action">
+        <div class="container">
+            <h2>⚡ O Que VOCÊ Pode Fazer Hoje!</h2>
+            <div class="action-buttons">
+                <button class="action-btn green" onclick="showImpact('economia-agua')">💧 Economia de Água</button>
+                <button class="action-btn blue" onclick="showImpact('reduzir-plastico')">♻️ Reduzir Plástico</button>
+                <button class="action-btn purple" onclick="showImpact('plantar-arvore')">🌳 Plantar Árvores</button>
+            </div>
+            <div id="impact-message" class="impact-popup"></div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 12: BENEFÍCIOS -->
+    <section class="section dark-bg">
+        <div class="container">
+            <h2>🎯 Benefícios da Sustentabilidade</h2>
+            <ul class="benefits-list">
+                <li>Planeta mais saudável para gerações futuras</li>
+                <li>Economia de recursos e dinheiro</li>
+                <li>Saúde melhor para todos</li>
+                <li>Inovação e novos empregos verdes</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 13: CONCLUSÃO -->
+    <section id="conclusao" class="final-section">
+        <div class="container">
+            <h2>🌟 Conclusão</h2>
+            <p class="final-message">
+                Um mundo melhor é possível! Cada pequena ação conta. 
+                <strong>Junte-se a nós nessa jornada!</strong>
+            </p>
+            <div class="final-buttons">
+                <a href="#inicio" class="btn-secondary">Voltar ao Topo</a>
+                <button class="btn-primary" onclick="showFinalMessage()">Eu Me Comprometo! ✨</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Trabalho de Conclusão - 3º Ano EM | Feito com ❤️ para um futuro melhor</p>
+    </footer>
+
+    <!-- Liga o JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
